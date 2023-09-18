@@ -77,4 +77,4 @@ INNER JOIN `students`
     ON `exam_student`.`student_id` = `students`.`id`
 INNER JOIN `courses`
     ON `exams`.`course_id` = `courses`.`id`
-GROUP BY `students`.`name` , `students`.`surname` , `courses`.`name`;
+GROUP BY `students`.`id`, `courses`.`name`;
