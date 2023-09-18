@@ -77,5 +77,5 @@ INNER JOIN `students`
     ON `exam_student`.`student_id` = `students`.`id`
 INNER JOIN `courses`
     ON `exams`.`course_id` = `courses`.`id`
-WHERE `exam_student`.`vote` > 18
-GROUP BY `students`.`id`, `courses`.`id`;
+GROUP BY `students`.`id`, `courses`.`id`
+	HAVING `voto_massimo` > 18;
